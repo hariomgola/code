@@ -1,0 +1,27 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "code for future references",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev":"nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hariomgola/code.git"
+  },
+  "keywords": [
+    "code"
+  ],
+  "author": "hariom kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hariomgola/code/issues"
+  },
+  "homepage": "https://github.com/hariomgola/code#readme",
+  "dependencies": {
+    "open": "^8.4.0"
+  }
+}
