@@ -56,8 +56,22 @@ const saveFileonClick = (...file) => {
  * Below Included is HTML code for reference
  * <button type="button" onclick="DriverCode()">Create and Save File</button>
  */
-const DriverCode = () =>{
-    let fileData = 'I am text file data'
-    let fileName = "pro.cmd"
-    saveFileonClick(fileData,fileName)
+const DriverCode = () => {
+  let fileData = "I am text file data";
+  let fileName = "pro.cmd";
+  saveFileonClick(fileData, fileName);
+};
+
+/**
+ * TypeScript code for reference
+ */
+function runTimeFile(fileData, fileName) {
+  let runTimeBlob = new Blob([fileData], { type: "text/plain" });
+  var e = document.createEvent("MouseEvents");
+  var a = document.createElement("a");
+  a.download = fileName;
+  a.href = window.URL.createObjectURL(runTimeBlob);
+  a.dataset.downloadurl = ["text/json", a.download, a.href].join(":");
+  e.initEvent("click", true, false);
+  a.dispatchEvent(e);
 }
